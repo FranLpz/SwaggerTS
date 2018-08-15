@@ -1,5 +1,5 @@
 var should = require('should');
-var request = require('../../../../../.cache/typescript/2.9/node_modules/@types/supertest');
+var request = require('supertest');
 var server = require('../../../app');
 
 describe('controllers', function() {

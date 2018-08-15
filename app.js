@@ -1,7 +1,7 @@
 'use strict';
 
-var SwaggerExpress = require('../../.cache/typescript/2.9/node_modules/@types/swagger-express-mw');
-var app = require('../../.cache/typescript/2.9/node_modules/@types/express')();
+var SwaggerExpress = require('swagger-express-mw');
+var app = require('express')();
 module.exports = app; // for testing
 
 var config = {
