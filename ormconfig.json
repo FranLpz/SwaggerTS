@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 9001,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "areuin",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "api/entity/**/*.ts"
+    ],
+    "migrations": [
+       "api/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "api/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "api/entity",
+        "subscribersDir": "api/subscriber",
+        "migrationsDir": "api/migration"
+    }
+ }

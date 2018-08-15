@@ -1,0 +1,30 @@
+{
+  "name": "SwaggerTS2",
+  "version": "0.0.1",
+  "private": true,
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "@types/node": "^10.7.0",
+    "express": "^4.12.3",
+    "pg": "^7.4.3",
+    "swagger-express-mw": "^0.1.0",
+    "typeorm": "^0.2.7"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test",
+    "dev-api": "cross-env NODE_ENV=dev NODE_CONFIG_DIR=./server/config --ignore src/ -e ts --exec \"npm run dev-compile-n-run\"",
+    "dev-compile": "tsc -p . && node index.js",
+    "dev-compile-server": "tsc -p ./server/",
+    "start-dev": "npm-run-all --parallel dev-api start"
+  }
+}
